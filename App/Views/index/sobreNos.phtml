@@ -1,7 +1,11 @@
 <h1>Sobre Nós</h1>
 <hr>
 <?php
+
  foreach ($this->view->dados as $key => $value) {
-    echo $value . '<br>';
+    echo '<h1>' . $value['titulo'] . '</h1><br>';
+    echo $value['descricao'] ;
+    echo '<hr>';
   }
+
 ?>
